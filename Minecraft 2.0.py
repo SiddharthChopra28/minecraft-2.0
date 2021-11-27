@@ -129,7 +129,7 @@ class Virus:
         self.root = root
         self.winNames = ['HAHAHAHAHAHA!', 'VIRUS!!', 'THIS IS A TOTALLY REAL AND HARMFUL VIRUS',
                          'YOU HAVE BEEN HACKED', 'YOU ARE AN IDIOT!']
-        self.imgLocations = ['resources/idiot1.jpg', 'resources/idiot2.png', 'resources/idiot3.jpg']
+        self.imgLocations = ['resources/player.jpg', 'resources/creeper.png', 'resources/mobs.jpg']
         self.bgImg = 'resources/desktop.png'
         self.max_windows = maxWindows
 
@@ -140,7 +140,7 @@ class Virus:
         ctypes.windll.user32.SystemParametersInfoW(20, 0, os.path.join(os.getcwd(), self.bgImg) , 0)
 
     def play_song(self):
-            mixer.music.load('resources/idiot.mp3')
+            mixer.music.load('resources/song.mp3')
             mixer.music.play(-1)
 
         
